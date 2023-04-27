@@ -13,3 +13,11 @@ helmCharts:
   version: "0.1.0"
   releaseName: hello-chart
   namespace: default
+- name: hello-chart-1
+  repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/istio-helm-pp
+  chart: hello-chart
+  version: 0.1.0
+  releaseName: hello-chart
+  namespace: default
+  auth: gcpserviceaccount
+  gcpServiceAccountEmail: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
