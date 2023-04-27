@@ -8,6 +8,7 @@ helmCharts:
   version: v1.5.3
   releaseName: my-cert-manager
   namespace: cert-manager
+  includeCRDs: true
 # - name: hello-chart
 #   repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/istio-helm-pp/hello-chart
 #   version: "0.1.0"
