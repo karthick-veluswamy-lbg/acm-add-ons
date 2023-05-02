@@ -1,0 +1,7 @@
+kind: RootSync
+metadata:
+  name: istio
+spec:
+  helm:
+    values:
+      installCRDs: true
