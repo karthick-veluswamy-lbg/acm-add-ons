@@ -4,6 +4,6 @@ metadata:
 spec:
   helm:
     chart: istio
-    version: 1.17.2
+    version: 1.17.1
     releaseName: istio
     namespace: istio-system
