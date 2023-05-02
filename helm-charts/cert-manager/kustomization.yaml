@@ -8,6 +8,9 @@ patches:
   path: patch.yaml
 - target:
     kind: RootSync
+  path: values.yaml
+- target:
+    kind: RootSync
   patch: |-
     - op: replace
       path: /metadata/name
