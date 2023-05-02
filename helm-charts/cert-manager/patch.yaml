@@ -1,0 +1,9 @@
+kind: RootSync
+metadata:
+  name: cert-manager
+spec:
+  helm:
+    chart: cert-manager
+    version: v1.11.0
+    releaseName: cert-manager
+    namespace: cert-manager

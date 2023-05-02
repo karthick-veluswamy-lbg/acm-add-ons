@@ -1,7 +1,7 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
-  name: istio-1-17-1
+  name: <name_here>
   namespace: config-management-system
 spec:
   sourceFormat: unstructured
@@ -9,9 +9,9 @@ spec:
   helm:
     repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/helm-charts
     chart: istio
-    version: 1.17.1
-    releaseName: istio
+    version: <version>
+    releaseName: <release_name>
     includeCRDs: true
-    namespace: istio-system
+    namespace: <namespace>
     auth: gcpserviceaccount
-    gcpServiceAccountEmail: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
+    gcpServiceAccountEmail: <GCP_service_acount>

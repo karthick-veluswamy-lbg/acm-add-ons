@@ -1,0 +1,14 @@
+resources:
+- ../../templates/helmRootSync
+
+
+patches:
+- target:
+    kind: RootSync
+  path: patch.yaml
+- target:
+    kind: RootSync
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: istio

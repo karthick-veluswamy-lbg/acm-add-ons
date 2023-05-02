@@ -1,13 +1,11 @@
 resources:
-- helm-add-ons.yaml
+- ../../helm-charts/istio
+- ../../helm-charts/cert-manager
 
-
-helmCharts:
-- name: cert-manager
-  repo: https://charts.jetstack.io
-  version: v1.5.3
-  releaseName: my-cert-manager
-  namespace: cert-manager
-  includeCRDs: true
-  valuesInline:
-    installCRDs: true
+patches:
+- target:
+    kind: RootSync
+  patch: |-
+    - op: replace
+      path: /spec/helm/gcpServiceAccountEmail
+      value: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
