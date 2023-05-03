@@ -9,3 +9,7 @@ spec:
           - name: lab1
             hosts:
             - "test1.dev.lloydsbanking.dev"
+        egress:
+          - name: lab1
+            hosts:
+            - edition.cnn.com
