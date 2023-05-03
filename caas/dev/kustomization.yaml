@@ -4,8 +4,6 @@ resources:
 
 
 
-
-
 patches:
 - target:
     kind: RootSync

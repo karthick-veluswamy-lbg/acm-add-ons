@@ -6,6 +6,8 @@ spec:
     values:
       gateway-objects:
         ingress:
-          name: lab1
-          hosts:
-            - "test.dev.lloydsbanking.dev"
+          - name: lab1
+            hosts:
+            - svc1.pdev.lloydsbanking.dev
+            - svc2.pdev.lloydsbanking.dev
+            - svc3.pdev.lloydsbanking.dev
