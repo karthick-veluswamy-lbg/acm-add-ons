@@ -1,0 +1,11 @@
+kind: RootSync
+metadata:
+  name: istio
+spec:
+  helm:
+    values:
+      gateway-objects:
+        ingress:
+          name: lab1
+          hosts:
+            - svc1.pdev.lloydsbanking.dev
