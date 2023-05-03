@@ -13,3 +13,7 @@ patches:
     - op: replace
       path: /spec/helm/gcpServiceAccountEmail
       value: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
+
+- target:
+    name: istio
+  path: values/istio.yaml
