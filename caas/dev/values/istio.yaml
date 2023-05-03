@@ -8,4 +8,4 @@ spec:
         ingress:
           - name: lab1
             hosts:
-            - "*.dev.lloydsbanking.dev"
+            - \"*.dev.lloydsbanking.dev\"
