@@ -15,5 +15,5 @@ patches:
     name: istio
   path: values/istio.yaml
 - target:
-    name: istio
+    name: cert-manager
   path: values/cert-manager.yaml

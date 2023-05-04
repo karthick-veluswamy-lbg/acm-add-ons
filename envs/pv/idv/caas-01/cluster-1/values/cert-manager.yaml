@@ -1,0 +1,7 @@
+kind: RootSync
+metadata:
+  name: cert-manager
+spec:
+  helm:
+    values:
+      installCRDs: true
