@@ -1,7 +1,6 @@
 resources:
-- ../../helm-charts/istio
-- ../../helm-charts/cert-manager
-
+- ../../../../../helm-charts/istio
+- ../../../../../helm-charts/cert-manager
 
 
 patches:
@@ -15,3 +14,6 @@ patches:
 - target:
     name: istio
   path: values/istio.yaml
+- target:
+    name: istio
+  path: values/cert-manager.yaml
