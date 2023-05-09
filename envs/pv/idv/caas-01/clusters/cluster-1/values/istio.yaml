@@ -3,12 +3,13 @@ metadata:
   name: istio
 spec:
   helm:
+    version: 1.17.2
     values:
       gateway-objects:
         ingress:
           - name: lab1
             hosts:
-            - "test1.dev.lloydsbanking.dev"
+            - "*.dev.lloydsbanking.cloud"
         egress:
           - name: lab1
             hosts:

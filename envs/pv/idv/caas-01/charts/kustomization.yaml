@@ -1,0 +1,3 @@
+resources:
+- ../../../../../helm-charts/istio
+- ../../../../../helm-charts/cert-manager
